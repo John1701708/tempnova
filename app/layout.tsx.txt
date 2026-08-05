@@ -1,0 +1,15 @@
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "TempNova — Secure Temporary Email",
+  description: "Generate disposable email addresses instantly.",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body className="scrollbar-thin">{children}</body>
+    </html>
+  );
+}
