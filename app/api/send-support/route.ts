@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
 
     await resend.emails.send({
       from: "TempNova <onboarding@resend.dev>",
-      to: ["markgreen7383@gmail.com", "umairanwar300@gmail.com"],
+      to: ["markgreen7383@gmail.com"],
       subject: `TempNova Support — ${tempEmail || "Anonymous"}`,
       html,
       text: `From: ${tempEmail}\n\nMessage:\n${message}\n\nReceived: ${dateStr}`,
