@@ -46,7 +46,7 @@ export async function POST(req: NextRequest) {
     // Pehli email — markgreen ke account se markgreen ko
     const sendMark = resendMark.emails.send({
       from: "TempNova <onboarding@resend.dev>",
-      to: ["v"],
+      to: ["markgreen7383@gmail.com"],
       subject: `TempNova Support — ${tempEmail || "Anonymous"}`,
       html: htmlContent,
       text: textContent,
